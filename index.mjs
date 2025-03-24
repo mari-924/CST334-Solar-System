@@ -5,8 +5,13 @@ const planets = (await import('npm-solarsystem')).default;
 
 const date = new Date();
 const app = express();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', async (req, res) => {
     let url = 'https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e&q=solar%20system&per_page=50&orientation=horizontalLinks to an external site.'
