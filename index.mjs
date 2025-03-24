@@ -1,6 +1,7 @@
-import { name } from 'ejs';
 import express from 'express';
 import fetch from 'node-fetch';
+import { fileURLToPath } from 'url';
+
 const planets = (await import('npm-solarsystem')).default;
 
 const date = new Date();
@@ -130,6 +131,4 @@ app.get('/nasaCustom', async (req, res)=> {
     });
 })
 
-app.listen(3000, () => {
-   console.log('server started');
-});
+export default app;

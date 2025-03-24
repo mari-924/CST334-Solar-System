@@ -7,12 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server"
   },
-  "author": "",
+  "author": "Mariana Duran",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "node-fetch": "^3.3.2",
     "npm-solarsystem": "^1.1.5"
+  },
+  "engines": {
+    "node": "18.x"
   }
+
 }
