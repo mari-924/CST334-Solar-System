@@ -12,7 +12,13 @@
     <%- include('partials/nav-bar.ejs')%>
     <br><br>
     <img src="<%=neptune.image%>" alt="neptune" width="50%" length="50%">
-    <p id="info"><%=neptune.description%></p>
+    <p id="info"><b>Distance From Sun: </b> <%=neptune.distanceFromSun%>
+        <br><b>Year Length: </b> <%=neptune.yearLength%>
+        <br><b>Radius: </b> <%=neptune.radius%>
+        <br><b>One Earth Day: </b> <%=neptune.oneEarthDay%>
+        <br><b>Moons: </b> <%=neptune.moons%>
+        <br><b>Description: </b><%=neptune.description%>
+        </p>
     <%- include('partials/footer.ejs')%>
 
 </body>

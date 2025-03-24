@@ -12,7 +12,13 @@
     <%- include('partials/nav-bar.ejs')%>
     <br><br>
     <img src="<%=venus.image%>" alt="venus" width="30%" length="30%">
-    <p id="info"><%=venus.description%></p>
+    <p id="info"><b>Distance From Sun: </b> <%=venus.distanceFromSun%>
+        <br><b>Year Length: </b> <%=venus.yearLength%>
+        <br><b>Radius: </b> <%=venus.radius%>
+        <br><b>One Earth Day: </b> <%=venus.oneEarthDay%>
+        <br><b>Moons: </b> <%=venus.moons%>
+        <br><b>Description: </b><%=venus.description%>
+        </p>
     <%- include('partials/footer.ejs')%>
 
 </body>

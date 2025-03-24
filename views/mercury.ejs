@@ -11,8 +11,15 @@
 
     <%- include('partials/nav-bar.ejs')%>
     <br><br>
-    <img src="<%=mercury.image%>" alt="mercury" width="50%" length="50%">
-    <p id="info"><%=mercury.description%></p>
+    <img src="<%=mercury.image%>" alt="mercury" width="50%" height="50%">
+    <p id="info"><b>Distance From Sun: </b> <%=mercury.distanceFromSun%>
+    <br><b>Year Length: </b> <%=mercury.yearLength%>
+    <br><b>Radius: </b> <%=mercury.radius%>
+    <br><b>One Earth Day: </b> <%=mercury.oneEarthDay%>
+    <br><b>Moons: </b> <%=mercury.moons%>
+    <br><b>Description: </b><%=mercury.description%>
+    </p>
+
     <%- include('partials/footer.ejs')%>
 
     

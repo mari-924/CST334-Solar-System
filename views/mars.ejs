@@ -11,8 +11,14 @@
 
     <%- include('partials/nav-bar.ejs')%>
     <br><br>
-    <img src="<%=mars.image%>" alt="mars" width="25%" length="25%">
-    <p id="info"><%=mars.description%></p>
+    <img src="/images/mars.webp" alt="mars" width="25%" length="25%">
+    <p id="info"><b>Distance From Sun: </b> <%=mars.distanceFromSun%>
+        <br><b>Year Length: </b> <%=mars.yearLength%>
+        <br><b>Radius: </b> <%=mars.radius%>
+        <br><b>One Earth Day: </b> <%=mars.oneEarthDay%>
+        <br><b>Moons: </b> <%=mars.moons%>
+        <br><b>Description: </b><%=mars.description%>
+        </p>
 
     <%- include('partials/footer.ejs')%>
 
